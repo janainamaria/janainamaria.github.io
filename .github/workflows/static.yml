@@ -1,12 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy do meu site
+name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    tags:
-      - "v*"  # Runs only when a tag starting with 'v' is pushed (e.g., v0.0.1, v0.0.1)
-
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
